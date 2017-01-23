@@ -1,0 +1,78 @@
+body {
+  background: steelblue;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 326px;
+  background: #234;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.refresh {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 25px;
+  height: 25px;
+  border-left: 2px solid #f33;
+}
+
+i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  color: #ffa500;
+}
+
+.title {
+  width: 322px;
+  height: 25px;
+  border: 2px solid #f33;
+  border-bottom: 0;
+  text-align: center;
+  line-height: 25px;
+  color: #ffa500;
+}
+
+.left,
+.right {
+  float: left;
+  width: 160px;
+  border-left: 2px solid #f33;
+  border-top: 2px solid #f33;
+  border-right: 2px solid #f33;
+}
+
+.left > *,
+.right > * {
+  width: 160px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  border-bottom: 2px solid #f33;
+  text-align: center;
+  padding: 0px;
+  line-height: 25px;
+  color: #ffa500;
+  outline: none;
+}
+
+.left {
+  border-right: 1px solid #f33;
+}
+
+.right {
+  border-left: 1px solid #f33;
+}
+
+.refresh,
+.save {
+  cursor: pointer;
+}
